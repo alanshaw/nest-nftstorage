@@ -16,7 +16,7 @@ describe('AppController', () => {
 
   describe('root', () => {
     it('should return the CID for "Hello World!"', () => {
-      expect(appController.getHello()).toBe('bafkreid7qoywk77r7rj3slobqfekdvs57qwuwh5d2z3sqsw52iabe3mqne');
+      expect(appController.getHello()).resolves.toBe('bafkreid7qoywk77r7rj3slobqfekdvs57qwuwh5d2z3sqsw52iabe3mqne');
     });
   });
 });
